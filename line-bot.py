@@ -43,7 +43,7 @@ def handle_message(event):
         r = 'hi'
     elif msg == '你吃飯了嗎':
         r = '還沒啦幹'
-    elif msg == '請問你是處女嗎?':
+    elif msg == '請問你是處女嗎':
         r = '畜生變態色情狂去死吧'
     line_bot_api.reply_message(
         event.reply_token,

@@ -45,7 +45,6 @@ def handle_message(event):
         r = '還沒啦幹'
     elif msg == '請問你是處女嗎':
         r = '畜生變態色情狂去死吧'                        
-    elif '處女' in msg:
         sticker_message = StickerSendMessage(
             package_id='11538',
             sticker_id='51626518'

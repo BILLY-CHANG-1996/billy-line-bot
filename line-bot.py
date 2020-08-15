@@ -45,15 +45,20 @@ def handle_message(event):
         r = '還沒啦幹'
     elif msg == '請問你是處女嗎':
         r = '畜生變態色情狂去死吧'
-        sticker_message = StickerSendMessage(
-            package_id='11538',
-            sticker_id='51626518'
-            )
+        
+        
         
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=r)
-        sticker_message)
+        TextSendMessage(text=r))
+    if '處女' in msg:
+        sticker_message = StickerSendMessage(
+            package_id='11538',
+            sticker_id='51626518'
+        )
+        line_bot_api.reply_message(
+            event.reply_token,
+            sticker_message)
 
 
 if __name__ == "__main__":
